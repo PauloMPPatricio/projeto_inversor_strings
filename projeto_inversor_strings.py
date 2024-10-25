@@ -1,3 +1,17 @@
+"""
+Projeto Para a seleção de estágio da Target Sistemas
+Nome: Paulo Mauricio Pereira Patricio
+Estudante: Análise e Desenvolvimento de Sistemas
+
+Atualize o número da versão aqui
+Versão: 1.0.1
+
+Descrição da Versão:
+- Melhorada a legibilidade da saída com inclusão de "\n".
+- Adicionado "input()" para pausar a tela e permitir melhor leitura dos resultados.
+"""
+
+
 class InversorDeString:
     def __init__(self, entrada):
         # Inicializa a entrada convertida em string
@@ -14,9 +28,10 @@ class InversorDeString:
 
 # Função principal para interação com o usuário
 def main():
+    print("*" * 3 + " Inversor de Strings " + 3 * "*")
     while True:
         # Solicita a entrada do usuário
-        entrada_usuario = input("Digite qualquer coisa: ")
+        entrada_usuario = input("\nDigite qualquer coisa que você queira inverter: ")
 
         # Verifica se a entrada é vazia ou contém apenas um caractere
         if len(entrada_usuario) == 0:
@@ -32,7 +47,8 @@ def main():
 
     # Chama o método inverter e exibe o resultado
     string_invertida = inversor.inverter()
-    print(f"Agora veja o que foi digitado de forma invertida: {string_invertida}")
+    print(f"\nAgora veja o que foi digitado de forma invertida: {string_invertida}")
+    input()
 
 
 # Executa o programa
